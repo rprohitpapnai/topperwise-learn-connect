@@ -1,6 +1,8 @@
 import { Button } from "@/components/ui/button";
-import { Menu } from "lucide-react";
+import { Menu, X } from "lucide-react";
 import { useState } from "react";
+import { Link } from "react-router-dom";
+import logo from "@/assets/logo.png";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -9,25 +11,22 @@ const Navbar = () => {
     <nav className="border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 sticky top-0 z-50">
       <div className="container mx-auto px-4">
         <div className="flex h-16 items-center justify-between">
-          <div className="flex items-center gap-2">
-            <div className="text-2xl font-bold">
-              <span className="text-primary">Toppers</span>
-              <span className="text-accent">Wise</span>
-            </div>
-          </div>
+          <Link to="/" className="flex items-center">
+            <img src={logo} alt="Topper Wise" className="h-10 w-auto" />
+          </Link>
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center gap-6">
-            <a href="#features" className="text-foreground/80 hover:text-primary transition-colors">
+            <a href="/#features" className="text-foreground/80 hover:text-primary transition-colors">
               Features
             </a>
-            <a href="#boards" className="text-foreground/80 hover:text-primary transition-colors">
+            <a href="/#boards" className="text-foreground/80 hover:text-primary transition-colors">
               Boards
             </a>
-            <a href="#pricing" className="text-foreground/80 hover:text-primary transition-colors">
+            <Link to="/pricing" className="text-foreground/80 hover:text-primary transition-colors">
               Pricing
-            </a>
-            <a href="#contact" className="text-foreground/80 hover:text-primary transition-colors">
+            </Link>
+            <a href="/#contact" className="text-foreground/80 hover:text-primary transition-colors">
               Contact
             </a>
           </div>
@@ -46,16 +45,16 @@ const Navbar = () => {
         {/* Mobile Navigation */}
         {isOpen && (
           <div className="md:hidden py-4 space-y-3">
-            <a href="#features" className="block py-2 text-foreground/80 hover:text-primary transition-colors">
+            <a href="/#features" className="block py-2 text-foreground/80 hover:text-primary transition-colors">
               Features
             </a>
-            <a href="#boards" className="block py-2 text-foreground/80 hover:text-primary transition-colors">
+            <a href="/#boards" className="block py-2 text-foreground/80 hover:text-primary transition-colors">
               Boards
             </a>
-            <a href="#pricing" className="block py-2 text-foreground/80 hover:text-primary transition-colors">
+            <Link to="/pricing" className="block py-2 text-foreground/80 hover:text-primary transition-colors">
               Pricing
-            </a>
-            <a href="#contact" className="block py-2 text-foreground/80 hover:text-primary transition-colors">
+            </Link>
+            <a href="/#contact" className="block py-2 text-foreground/80 hover:text-primary transition-colors">
               Contact
             </a>
             <div className="flex flex-col gap-2 pt-2">

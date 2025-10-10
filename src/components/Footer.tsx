@@ -1,4 +1,5 @@
-import { Facebook, Twitter, Instagram, Linkedin, Mail, Phone, MapPin } from "lucide-react";
+import { Facebook, Twitter, Instagram, Linkedin, Mail, Phone, MapPin, MessageCircle } from "lucide-react";
+import logo from "@/assets/logo.png";
 
 const Footer = () => {
   return (
@@ -6,10 +7,7 @@ const Footer = () => {
       <div className="container mx-auto px-4 py-12">
         <div className="grid md:grid-cols-4 gap-8 mb-8">
           <div>
-            <h3 className="text-xl font-bold mb-4">
-              <span className="text-primary">Toppers</span>
-              <span className="text-accent">Wise</span>
-            </h3>
+            <img src={logo} alt="Topper Wise" className="h-12 w-auto mb-4" />
             <p className="text-muted-foreground text-sm">
               Empowering students with personalized one-on-one tutoring for academic excellence.
             </p>
@@ -40,15 +38,26 @@ const Footer = () => {
             <ul className="space-y-3 text-sm">
               <li className="flex items-center gap-2 text-muted-foreground">
                 <Mail className="h-4 w-4" />
-                <span>info@topperswise.com</span>
+                <a href="mailto:topprwisework@gmail.com" className="hover:text-primary transition-colors">
+                  topprwisework@gmail.com
+                </a>
               </li>
               <li className="flex items-center gap-2 text-muted-foreground">
                 <Phone className="h-4 w-4" />
-                <span>+91 1234567890</span>
+                <a href="tel:+917455971428" className="hover:text-primary transition-colors">
+                  +91 7455971428
+                </a>
               </li>
               <li className="flex items-center gap-2 text-muted-foreground">
-                <MapPin className="h-4 w-4" />
-                <span>Mumbai, India</span>
+                <MessageCircle className="h-4 w-4" />
+                <a 
+                  href="https://wa.me/917455971428" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="hover:text-primary transition-colors"
+                >
+                  WhatsApp Us
+                </a>
               </li>
             </ul>
           </div>
