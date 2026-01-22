@@ -12,7 +12,7 @@ const Footer = () => {
               Empowering students with personalized one-on-one tutoring for academic excellence.
             </p>
           </div>
-          
+
           <div>
             <h4 className="font-semibold mb-4">Quick Links</h4>
             <ul className="space-y-2 text-sm">
@@ -20,9 +20,10 @@ const Footer = () => {
               <li><a href="#boards" className="text-muted-foreground hover:text-primary transition-colors">Boards</a></li>
               <li><a href="#pricing" className="text-muted-foreground hover:text-primary transition-colors">Pricing</a></li>
               <li><a href="#about" className="text-muted-foreground hover:text-primary transition-colors">About Us</a></li>
+              <li><a href="/careers" className="text-muted-foreground hover:text-primary transition-colors">Careers</a></li>
             </ul>
           </div>
-          
+
           <div>
             <h4 className="font-semibold mb-4">Support</h4>
             <ul className="space-y-2 text-sm">
@@ -32,7 +33,7 @@ const Footer = () => {
               <li><a href="#privacy" className="text-muted-foreground hover:text-primary transition-colors">Privacy Policy</a></li>
             </ul>
           </div>
-          
+
           <div>
             <h4 className="font-semibold mb-4">Contact</h4>
             <ul className="space-y-3 text-sm">
@@ -50,9 +51,9 @@ const Footer = () => {
               </li>
               <li className="flex items-center gap-2 text-muted-foreground">
                 <MessageCircle className="h-4 w-4" />
-                <a 
-                  href="https://wa.me/917455971428" 
-                  target="_blank" 
+                <a
+                  href="https://wa.me/917455971428"
+                  target="_blank"
                   rel="noopener noreferrer"
                   className="hover:text-primary transition-colors"
                 >
@@ -62,7 +63,7 @@ const Footer = () => {
             </ul>
           </div>
         </div>
-        
+
         <div className="border-t pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-sm text-muted-foreground">
             © 2025 ToppersWise. All rights reserved.

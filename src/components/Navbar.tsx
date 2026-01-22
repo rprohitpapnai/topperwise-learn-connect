@@ -8,11 +8,11 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 sticky top-0 z-50">
+    <nav className="border-b bg-background sticky top-0 z-50">
       <div className="container mx-auto px-4">
-        <div className="flex h-16 items-center justify-between">
+        <div className="flex h-28 items-center justify-between">
           <Link to="/" className="flex items-center">
-            <img src={logo} alt="Topper Wise" className="h-10 w-auto" />
+            <img src={logo} alt="Topper Wise" className="h-24 w-auto -my-4" />
           </Link>
 
           {/* Desktop Navigation */}
@@ -20,20 +20,31 @@ const Navbar = () => {
             <a href="/#features" className="text-foreground/80 hover:text-primary transition-colors">
               Features
             </a>
-            <a href="/#boards" className="text-foreground/80 hover:text-primary transition-colors">
-              Boards
-            </a>
+
             <Link to="/pricing" className="text-foreground/80 hover:text-primary transition-colors">
               Pricing
             </Link>
-            <a href="/#contact" className="text-foreground/80 hover:text-primary transition-colors">
+            <Link to="/about" className="text-foreground/80 hover:text-primary transition-colors">
+              About
+            </Link>
+            <Link to="/careers" className="text-foreground/80 hover:text-primary transition-colors">
+              Careers
+            </Link>
+            <Link to="/faq" className="text-foreground/80 hover:text-primary transition-colors">
+              FAQ
+            </Link>
+            <Link to="/contact" className="text-foreground/80 hover:text-primary transition-colors">
               Contact
-            </a>
+            </Link>
           </div>
 
           <div className="hidden md:flex items-center gap-3">
-            <Button variant="ghost">Sign In</Button>
-            <Button variant="hero">Get Started</Button>
+            <Link to="/login">
+              <Button variant="ghost">Sign In</Button>
+            </Link>
+            <Link to="/signup">
+              <Button variant="hero">Get Started</Button>
+            </Link>
           </div>
 
           {/* Mobile Menu Button */}
@@ -48,22 +59,33 @@ const Navbar = () => {
             <a href="/#features" className="block py-2 text-foreground/80 hover:text-primary transition-colors">
               Features
             </a>
-            <a href="/#boards" className="block py-2 text-foreground/80 hover:text-primary transition-colors">
-              Boards
-            </a>
+
             <Link to="/pricing" className="block py-2 text-foreground/80 hover:text-primary transition-colors">
               Pricing
             </Link>
-            <a href="/#contact" className="block py-2 text-foreground/80 hover:text-primary transition-colors">
+            <Link to="/about" className="block py-2 text-foreground/80 hover:text-primary transition-colors">
+              About
+            </Link>
+            <Link to="/careers" className="block py-2 text-foreground/80 hover:text-primary transition-colors">
+              Careers
+            </Link>
+            <Link to="/faq" className="block py-2 text-foreground/80 hover:text-primary transition-colors">
+              FAQ
+            </Link>
+            <Link to="/contact" className="block py-2 text-foreground/80 hover:text-primary transition-colors">
               Contact
-            </a>
+            </Link>
             <div className="flex flex-col gap-2 pt-2">
-              <Button variant="ghost" className="w-full">
-                Sign In
-              </Button>
-              <Button variant="hero" className="w-full">
-                Get Started
-              </Button>
+              <Link to="/login" className="w-full">
+                <Button variant="ghost" className="w-full">
+                  Sign In
+                </Button>
+              </Link>
+              <Link to="/signup" className="w-full">
+                <Button variant="hero" className="w-full">
+                  Get Started
+                </Button>
+              </Link>
             </div>
           </div>
         )}
