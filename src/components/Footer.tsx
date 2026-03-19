@@ -9,7 +9,7 @@ const Footer = () => {
           <div>
             <img src={logo} alt="Topper Wise" className="h-12 w-auto mb-4" />
             <p className="text-muted-foreground text-sm">
-              Empowering students with personalized one-on-one tutoring for academic excellence.
+              Empowering students across India, UAE, UK, USA, Australia & more with personalized one-on-one tutoring for classes 1-12.
             </p>
           </div>
 

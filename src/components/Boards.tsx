@@ -1,6 +1,6 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { GraduationCap } from "lucide-react";
+import { GraduationCap, Globe } from "lucide-react";
 
 const boards = [
   {
@@ -23,7 +23,19 @@ const boards = [
     description: "All State Board Curricula",
     subjects: "Region-specific syllabus",
   },
+  {
+    name: "IB",
+    description: "International Baccalaureate",
+    subjects: "Full IB curriculum support",
+  },
+  {
+    name: "International",
+    description: "UK, USA, UAE, Australia & more",
+    subjects: "Country-specific curricula",
+  },
 ];
+
+const countries = ["🇮🇳 India", "🇦🇪 UAE", "🇬🇧 UK", "🇺🇸 USA", "🇦🇺 Australia", "🇸🇬 Singapore", "🇨🇦 Canada", "🇶🇦 Qatar"];
 
 const Boards = () => {
   return (
@@ -34,10 +46,10 @@ const Boards = () => {
             Supporting All Major <span className="text-primary">Education Boards</span>
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            We offer specialized tutoring for classes 8-12 across different educational boards
+            We offer specialized tutoring for classes 1-12 across different educational boards worldwide
           </p>
         </div>
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
           {boards.map((board, index) => (
             <Card key={index} className="border-primary/20 hover:border-primary/50 transition-colors animate-slide-up">
               <CardContent className="pt-6">
@@ -53,14 +65,33 @@ const Boards = () => {
             </Card>
           ))}
         </div>
+
+        {/* Countries section */}
+        <div className="bg-secondary/30 rounded-2xl p-8 md:p-12 mb-12 animate-fade-in">
+          <div className="flex items-center justify-center gap-2 mb-6">
+            <Globe className="h-6 w-6 text-primary" />
+            <h3 className="text-2xl md:text-3xl font-bold">Students from Around the World</h3>
+          </div>
+          <p className="text-center text-muted-foreground mb-6 max-w-2xl mx-auto">
+            We teach students from across the globe, adapting to their local curriculum and timezone
+          </p>
+          <div className="flex flex-wrap justify-center gap-3">
+            {countries.map((country) => (
+              <Badge key={country} variant="outline" className="text-base py-2 px-5 bg-background">
+                {country}
+              </Badge>
+            ))}
+          </div>
+        </div>
+
         <div className="text-center bg-gradient-hero rounded-2xl p-8 md:p-12 animate-fade-in">
-          <h3 className="text-2xl md:text-3xl font-bold mb-4">Classes 8 to 12</h3>
+          <h3 className="text-2xl md:text-3xl font-bold mb-4">Classes 1 to 12</h3>
           <p className="text-lg text-muted-foreground mb-6 max-w-2xl mx-auto">
             Comprehensive curriculum coverage from foundational concepts to advanced topics, preparing
             students for board exams and competitive tests.
           </p>
           <div className="flex flex-wrap justify-center gap-3">
-            {["Class 8", "Class 9", "Class 10", "Class 11", "Class 12"].map((cls) => (
+            {Array.from({ length: 12 }, (_, i) => `Class ${i + 1}`).map((cls) => (
               <Badge key={cls} variant="outline" className="text-base py-2 px-4">
                 {cls}
               </Badge>

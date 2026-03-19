@@ -38,7 +38,7 @@ const Features = () => {
             Why Choose <span className="text-primary">ToppersWise</span>?
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            We provide comprehensive support to ensure your child excels academically
+            Comprehensive support for classes 1-12 across India, UAE, UK, USA, Australia & more
           </p>
         </div>
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
