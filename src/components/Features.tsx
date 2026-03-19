@@ -1,5 +1,5 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { Users, TrendingUp, Shield, Clock } from "lucide-react";
+import { Users, TrendingUp, Shield, Clock, Globe } from "lucide-react";
 
 const features = [
   {
