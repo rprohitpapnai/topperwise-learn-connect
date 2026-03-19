@@ -11,6 +11,8 @@ import About from "./pages/About";
 import NotFound from "./pages/NotFound";
 import Careers from "./pages/Careers";
 import Auth from "./pages/Auth";
+import HelpCenter from "./pages/HelpCenter";
+import PrivacyPolicy from "./pages/PrivacyPolicy";
 import WhatsappFloatingButton from "@/components/WhatsappFloatingButton";
 
 const queryClient = new QueryClient();
