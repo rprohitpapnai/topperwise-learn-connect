@@ -1,5 +1,5 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { Users, TrendingUp, Shield, Clock } from "lucide-react";
+import { Users, TrendingUp, Shield, Clock, Globe } from "lucide-react";
 
 const features = [
   {
@@ -22,6 +22,11 @@ const features = [
     title: "Flexible Scheduling",
     description: "Choose class timings that work best for your child's schedule and learning rhythm.",
   },
+  {
+    icon: Globe,
+    title: "Global Reach",
+    description: "Serving students across India, UAE, UK, USA, Australia, Singapore, Canada and more.",
+  },
 ];
 
 const Features = () => {
@@ -33,7 +38,7 @@ const Features = () => {
             Why Choose <span className="text-primary">ToppersWise</span>?
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            We provide comprehensive support to ensure your child excels academically
+            Comprehensive support for classes 1-12 across India, UAE, UK, USA, Australia & more
           </p>
         </div>
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
