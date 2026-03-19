@@ -19,11 +19,6 @@ const boards = [
     subjects: "Full curriculum support",
   },
   {
-    name: "State Boards",
-    description: "All State Board Curricula",
-    subjects: "Region-specific syllabus",
-  },
-  {
     name: "IB",
     description: "International Baccalaureate",
     subjects: "Full IB curriculum support",
