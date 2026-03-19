@@ -22,6 +22,11 @@ const features = [
     title: "Flexible Scheduling",
     description: "Choose class timings that work best for your child's schedule and learning rhythm.",
   },
+  {
+    icon: Globe,
+    title: "Global Reach",
+    description: "Serving students across India, UAE, UK, USA, Australia, Singapore, Canada and more.",
+  },
 ];
 
 const Features = () => {
