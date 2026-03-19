@@ -79,10 +79,8 @@ const Hero = () => {
           {/* Animated floating elements area */}
           <div className="relative h-[400px] md:h-[500px] animate-fade-in">
             {/* Central circle */}
-            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-48 h-48 md:w-64 md:h-64 rounded-full bg-primary/10 flex items-center justify-center">
-              <div className="w-36 h-36 md:w-48 md:h-48 rounded-full bg-primary/20 flex items-center justify-center">
-                <GraduationCap className="h-16 w-16 md:h-20 md:w-20 text-primary" />
-              </div>
+            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-56 h-56 md:w-72 md:h-72 flex items-center justify-center">
+              <img src={heroStudents} alt="Students learning online" className="w-full h-full object-contain drop-shadow-lg" style={{ animation: 'float 4s ease-in-out infinite' }} />
             </div>
 
             {/* Floating icons */}

@@ -16,10 +16,9 @@ const Footer = () => {
           <div>
             <h4 className="font-semibold mb-4">Quick Links</h4>
             <ul className="space-y-2 text-sm">
-              <li><a href="#features" className="text-muted-foreground hover:text-primary transition-colors">Features</a></li>
-              <li><a href="#boards" className="text-muted-foreground hover:text-primary transition-colors">Boards</a></li>
-              <li><a href="#pricing" className="text-muted-foreground hover:text-primary transition-colors">Pricing</a></li>
-              <li><a href="#about" className="text-muted-foreground hover:text-primary transition-colors">About Us</a></li>
+              <li><a href="/#features" className="text-muted-foreground hover:text-primary transition-colors">Features</a></li>
+              <li><a href="/pricing" className="text-muted-foreground hover:text-primary transition-colors">Pricing</a></li>
+              <li><a href="/about" className="text-muted-foreground hover:text-primary transition-colors">About Us</a></li>
               <li><a href="/careers" className="text-muted-foreground hover:text-primary transition-colors">Careers</a></li>
             </ul>
           </div>
@@ -27,10 +26,10 @@ const Footer = () => {
           <div>
             <h4 className="font-semibold mb-4">Support</h4>
             <ul className="space-y-2 text-sm">
-              <li><a href="#faq" className="text-muted-foreground hover:text-primary transition-colors">FAQ</a></li>
-              <li><a href="#help" className="text-muted-foreground hover:text-primary transition-colors">Help Center</a></li>
-              <li><a href="#contact" className="text-muted-foreground hover:text-primary transition-colors">Contact Us</a></li>
-              <li><a href="#privacy" className="text-muted-foreground hover:text-primary transition-colors">Privacy Policy</a></li>
+              <li><a href="/faq" className="text-muted-foreground hover:text-primary transition-colors">FAQ</a></li>
+              <li><a href="/help" className="text-muted-foreground hover:text-primary transition-colors">Help Center</a></li>
+              <li><a href="/contact" className="text-muted-foreground hover:text-primary transition-colors">Contact Us</a></li>
+              <li><a href="/privacy" className="text-muted-foreground hover:text-primary transition-colors">Privacy Policy</a></li>
             </ul>
           </div>
 
