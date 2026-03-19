@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
-import { ArrowRight, BookOpen, GraduationCap, Globe, Users, Star, Sparkles, Calculator, Atom, Pencil, Brain } from "lucide-react";
+import { ArrowRight, BookOpen, Globe, Users, Star, Sparkles, Calculator, Atom, Pencil, Brain } from "lucide-react";
+import heroStudents from "@/assets/hero-students.png";
 import { Link } from "react-router-dom";
 
 const FloatingIcon = ({
